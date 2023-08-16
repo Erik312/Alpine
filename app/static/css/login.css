@@ -1,0 +1,46 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-color: white;
+	height: 100vh;
+	width: 100vw;
+
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#login-form{
+    text-align: center;
+    
+}
+
+.f-input{
+    display: block;
+    margin: 5px auto;
+    padding: 10px 5px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+#login-button{
+    cursor: pointer;
+    margin-top: 17px;
+    
+}
+
+#sign-box{
+    text-align: center;
+    
+}
+
+#sign-button{
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    padding: 10px 5px;
+}

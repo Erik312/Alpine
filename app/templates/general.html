@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>general Posts</h1>
+
+    <a href="/post/create/1"><button>Create post</button></a>
+
+        {%if not result%}
+            <h3>None</h3>
+        {% else %}
+        
+            {% for xp in result %}
+                {% for i in xp %}
+                <div>
+                    <h5><a href="/post/view/{{i.id}}">{{i.title}}</a></h5>
+                    <h5>{{i.time_of_creation}}</h5>
+                </div>
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+        
+      
+
+
+
+    
+</body>
+</html>

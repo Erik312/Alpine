@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>view post page</h1>
+    <button><a href="/comment/create/{{result.id}}">Comment</a></button>
+    <div>
+        <h3>{{result.title}}</h3>
+        <h7>{{result.time_of_creation}}</h7>
+        <h5>{{result.meat_pot}}</h5>
+    </div>
+
+    <hr>
+    
+    {% for item in comment_query %}
+        <div>
+            <h7>{{item.time_of_creation}}</h7>
+            <h5>{{item.meat_pot}}</h5>
+        </div>
+    {% endfor %}
+</body>
+</html>
